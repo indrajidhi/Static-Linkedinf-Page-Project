@@ -10,6 +10,7 @@
 body{
     background: rgb(235, 235, 235);
 }
+
 nav .wrapper{
     display: flex;
     justify-content: space-between;
@@ -17,7 +18,7 @@ nav .wrapper{
     gap: 1rem;
     padding: 0.3rem 0.4rem;
     background: #fff;
-
+   
 }
 nav .wrapper .left,
 nav .wrapper .right{
@@ -379,7 +380,7 @@ main .media{
     background: white;
     border-radius: 0.8rem;
     height: 20vh;
-    margin-top: 2rem;
+    margin-top: 50px;
 }
 main .media .search{
     display: flex;
@@ -404,16 +405,80 @@ main .media .posts{
     display: flex;
     justify-content: space-between;
     margin: 0.5rem 2rem;
+
 }
 main .media .posts .post{
     display: flex;
     gap: 1rem;
+    padding: 0.6rem 0.5rem;
+    cursor: pointer;
+    opacity: 0.5;
+}
+main .media .posts .post h5{
+font-weight: 400;
+}
+main .media .posts .post:nth-child(1) i{
+    color: rgb(38, 115, 145);
+}
+main .media .posts .post:nth-child(2) i{
+    color: rgb(38, 145, 38);
+}
+main .media .posts .post:nth-child(3) i{
+    color: rgb(59, 169, 212);
+}
+main .media .posts .post:nth-child(4) i{
+    color: rgb(145, 38, 127);
 }
 /*=====Right sight starts here=====*/
 
 .right_side{
     background: white;
     border-radius: 0.8rem;
-    height: 65vh;
+    height: 67vh;
     margin-left: 1rem;
+}
+.right_side .news{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+}
+.right_side .news h4{
+    font-weight: 400;
+}
+.right_side .latest_news{
+margin: 0.5rem 1rem;
+cursor: pointer;
+transition: 0.2s all ease;
+}
+.right_side .latest_news:hover{
+    background: rgb(222, 205, 205);
+}
+.right_side .latest_news .one{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.right_side .latest_news .one h5{
+    font-weight: 500;
+}
+.right_side .latest_news .one i{
+    font-size: 0.5rem;
+    color: gray;
+}
+.right_side .latest_news .two{
+    margin: 0 1.9rem;
+    font-size: 0.8rem;
+    color: gray;
+}
+.right_side .show_more {
+    display: flex;
+    gap: 0.5rem;
+    color: gray;
+    align-items: center;
+    margin: 1rem;
+    cursor: pointer;
+}
+.right_side .show_more h5{
+    font-weight: 400;
 }
